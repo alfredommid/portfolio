@@ -59,7 +59,7 @@ export default function Home({data}) {
       </main>
       <div className={styles.contProjects}>
         {data.map(entrada => (
-          <MainProjects key={entrada.id} info={entrada} />
+          <MainProjects key={entrada._id} info={entrada} />
         ))}
       </div>
     </div>

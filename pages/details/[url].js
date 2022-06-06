@@ -31,7 +31,7 @@ const Project = ({data}) => {
             </div>
             <div className={styles.desImgCont}>
                 {designImages.map(img => 
-                    <div className={styles.imgContainer} key={img.id}>
+                    <div className={styles.imgContainer} key={img._id}>
                         <Image layout='responsive' width="100%" height="60%" src={img.url} alt={img.alternativeText} />
                     </div>)}
             </div>
@@ -66,7 +66,7 @@ const Project = ({data}) => {
   )
 }
 export async function getStaticPaths() {
-    const url = 'http://localhost:1337/details'
+    const url = `${process.env.API_URL}/details`
     const resp = await fetch(url);
     const entries = await resp.json();
 
