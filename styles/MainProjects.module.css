@@ -1,0 +1,104 @@
+.contProjectPar{
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 90vw;
+    height: 85vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1em;
+    cursor: pointer;
+    border-radius: .7em;
+    transition: .5s ease;
+}
+.contProjectPar:hover{
+    background-color: rgb(215, 223, 202);
+}
+.imgPar1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    border-radius: 1em;
+    position: relative;
+}
+.imgPar2{
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+    border-radius: 1em;
+    position: relative;
+}
+.textPar{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.contProjectNon{
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 90vw;
+    height: 85vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1em;
+    cursor: pointer;
+    border-radius: .7em;
+    transition: .5s ease;
+}
+.contProjectNon:hover{
+    background-color: rgb(215, 223, 202);
+}
+.imgNon1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    border-radius: 1em;
+    position: relative;
+}
+.imgNon2{
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+    border-radius: 1em;
+    position: relative;
+}
+.textNon{
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    font-size: 3em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position{
+    font-size: 1.6em;
+    width: 100%;
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.summary{
+    width: 100%;
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1em;
+}
