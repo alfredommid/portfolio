@@ -1,11 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { Fragment } from 'react';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import styles from '../../styles/detail.module.css';
 
 const Project = ({data}) => {
-    console.log(data);
     //deconstruct all of the variables from teh api request
     const {Project, position, summary, infoProject, langUsed, brandPres, designImages, mainPage, importantImage, resultInteractionsVid, resultMobileVideo, resultVid3, withVideos} = data;
   return (
